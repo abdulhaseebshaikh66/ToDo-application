@@ -1,0 +1,4 @@
+1) 
+	run server ( ./server "nodemon index" )
+2)
+	run todo project ( ./client "npm start" )

@@ -1,0 +1,32 @@
+1)
+	npm init
+2)
+	npm i express pg cors
+3)
+    touch index.js
+4)  in index file =>  
+    const express = require('express');
+    const app = express();
+    const cors = require('cors');
+
+    //middleware
+    app.use(cors());
+    app.use(express.json())
+
+    app.listen(5000, () => {
+        console.log("Server has started on post 5000");
+    });
+4)
+	TOUCH DATABASE.SQL
+5)  in database.sql file =>
+    CREATE DATABASE pernRoom;
+
+    CREATE TABLE ROOM(
+        ROOM_ID SERIAL PRIMARY KEY,
+        DESCRIPTION VARCHAR(255) NOT NULL
+    );
+
+
+6)
+    psql -U postgres
+    
